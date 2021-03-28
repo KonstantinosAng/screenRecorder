@@ -87,3 +87,8 @@ screenRecorder/.webpack/
 
 # Electron-Forge
 screenRecorder/out/
+
+
+# Python folder
+
+screenRecorder-python/venv
