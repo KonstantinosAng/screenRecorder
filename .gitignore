@@ -92,3 +92,4 @@ screenRecorder/out/
 # Python folder
 
 screenRecorder-python/venv
+screenRecorder-python/src/output
