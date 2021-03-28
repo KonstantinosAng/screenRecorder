@@ -4,20 +4,17 @@
     <meta charset="UTF-8">
     <title>Screen recorder</title>
     <link rel="stylesheet" href="index.css">
-    <script defer src="render.js"></script>
+    <script defer src="recorder.js"></script>
   </head>
   <body>
     <h1 class="heading"> Screen recorder app </h1>
-    <div class="container">
+    <div class="video__container">
       <video id="video__root" muted> </video>
     </div>
     <div class="buttons__container">
-      <button id="start__button"> Start recording </button>
-      <button id="stop__button"> Stop recording </button>
-      <hr />
-      <button id="video__select__button">
-        Choose Video Source
-      </button>
+      <button class="start_button" id="start__button"> Start </button>
+      <button class="stop_button" id="stop__button"> Stop </button>
+      <button class="list__button" id="video__select__button"> Video Source </button>
     </div>
   </body>
 </html>
