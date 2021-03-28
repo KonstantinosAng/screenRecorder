@@ -7,19 +7,17 @@
     <script defer src="render.js"></script>
   </head>
   <body>
-
-    <h1> Screen recorder app </h1>
-
-    <video id="video__root"> </video>
-
-    <button id="start__button"> Start recording </button>
-    <button id="stop__button"> Stop recording </button>
-
-    <hr />
-
-    <button id="video__select__button">
-      Choose Video Source
-    </button>
-
+    <h1 class="heading"> Screen recorder app </h1>
+    <div class="container">
+      <video id="video__root" muted> </video>
+    </div>
+    <div class="buttons__container">
+      <button id="start__button"> Start recording </button>
+      <button id="stop__button"> Stop recording </button>
+      <hr />
+      <button id="video__select__button">
+        Choose Video Source
+      </button>
+    </div>
   </body>
 </html>
