@@ -18,6 +18,9 @@ npm run make
 
 ## Python version
 
+Python version lacks a gui for now and lacks audio capture.
+See at the end of the [main python file](./screenRecorder-python/src/record.py) for usage.
+
 ## Examples
 
 Electron app
