@@ -2,11 +2,24 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>Screen recorder</title>
     <link rel="stylesheet" href="index.css">
+    <script defer src="render.js"></script>
   </head>
   <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
+
+    <h1> Screen recorder app </h1>
+
+    <video id="video__root"> </video>
+
+    <button id="start__button"> Start recording </button>
+    <button id="stop__button"> Stop recording </button>
+
+    <hr />
+
+    <button id="video__select__button">
+      Choose Video Source
+    </button>
+
   </body>
 </html>
