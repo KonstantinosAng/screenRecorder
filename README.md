@@ -22,6 +22,6 @@ npm run make
 
 Electron app
 <br>
-<p align="text">
+<p align="center">
   <img src="img/electron.png" />
 </p>
