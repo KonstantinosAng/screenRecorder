@@ -33,12 +33,14 @@ class Recorder:
     self.rec_button.grid(row=1, column=1, padx=1, pady=5)
     self.stop_button = Button(self.root, text="Stop", command=self.stopRecording, state=DISABLED, bg="red")
     self.stop_button.grid(row=1, column=2, padx=1)
-    self.imageFrame = Frame(self.root, width=int(self.width/1.5), height=int(self.height/1.5))
+    self.imageFrame = Frame(self.root)
     self.imageFrame.grid()
     self.label = Label(self.imageFrame)
     self.label.grid()
     self.root.title('Screen Recorder')
     self.root.attributes("-topmost", 0)
+    self.stream()
+    self.root.mainloop()
 
   def isRecording(self):
     return self.recording
@@ -51,10 +53,14 @@ class Recorder:
     frame = np.array(img)
     frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     if self.gui:
+      img = pyautogui.screenshot()
+      frame = np.array(img)
+      cv2image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGBA)
       img = Image.fromarray(cv2.resize(frame, (int(self.width/1.5), int(self.height/1.5))))
-      imgTk = ImageTk.PhotoImage(image=img)
-      self.label.configure(image=imgTk)
-      self.label.after(1, self.stream)
+      imgtk = ImageTk.PhotoImage(image=img)
+      self.label.imgtk = imgtk
+      self.label.configure(image=imgtk)
+      self.label.after(1, self.stream) 
       self.save(frame)
     return True
 
@@ -100,5 +106,4 @@ class Recorder:
 
 
 if __name__ == "__main__":
-  r = Recorder(live=True, gui=False)
-  r.rec()
+  r = Recorder()
