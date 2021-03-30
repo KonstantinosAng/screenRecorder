@@ -1,6 +1,6 @@
 # Screen Recorder
 
-A simple screen recorder app made with [ElectronJS](https://www.electronjs.org/) and with [Python](https://www.python.org) too.
+A simple screen recorder app made with [ElectronJS](https://www.electronjs.org/).
 
 ## Electron version
 
@@ -15,11 +15,6 @@ To build the .exe file for your own OS run the following code:
 ```
 npm run make
 ```
-
-## Python version
-
-Python version lacks a gui for now and lacks audio capture.
-See at the end of the [main python file](./screenRecorder-python/src/record.py) for usage.
 
 ## Examples
 
