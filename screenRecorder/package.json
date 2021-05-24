@@ -19,27 +19,45 @@
   "license": "MIT",
   "config": {
     "forge": {
-      "packagerConfig": {},
+      "packagerConfig": {
+        "icon": "favicon.ico",
+        "name": "screenRecorder"
+      },
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "screenrecorder"
+            "name": "screenRecorder",
+            "setupIcon": "favicon.ico",
+            "iconUrl": "https://github.com/KonstantinosAng/screenRecorder/tree/master/screenRecorder/src/favicon.ico"
           }
         },
         {
           "name": "@electron-forge/maker-zip",
           "platforms": [
             "darwin"
-          ]
+          ],
+          "config": {
+            "name": "screenRecorder",
+            "setupIcon": "favicon.icns",
+            "iconUrl": "https://github.com/KonstantinosAng/screenRecorder/tree/master/screenRecorder/src/favicon.icns"
+          }
         },
         {
           "name": "@electron-forge/maker-deb",
-          "config": {}
+          "config": {
+            "name": "screenRecorder",
+            "setupIcon": "favicon.png",
+            "iconUrl": "https://github.com/KonstantinosAng/screenRecorder/tree/master/screenRecorder/src/favicon.png"
+          }
         },
         {
           "name": "@electron-forge/maker-rpm",
-          "config": {}
+          "config": {
+            "name": "screenRecorder",
+            "setupIcon": "favicon.png",
+            "iconUrl": "https://github.com/KonstantinosAng/screenRecorder/tree/master/screenRecorder/src/favicon.png"
+          }
         }
       ]
     }
