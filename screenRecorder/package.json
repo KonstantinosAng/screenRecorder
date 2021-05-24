@@ -20,7 +20,7 @@
   "config": {
     "forge": {
       "packagerConfig": {
-        "icon": "favicon.ico",
+        "icon": "src/favicon.ico",
         "name": "screenRecorder"
       },
       "makers": [
@@ -28,7 +28,7 @@
           "name": "@electron-forge/maker-squirrel",
           "config": {
             "name": "screenRecorder",
-            "setupIcon": "favicon.ico",
+            "setupIcon": "src/favicon.ico",
             "iconUrl": "https://github.com/KonstantinosAng/screenRecorder/tree/master/screenRecorder/src/favicon.ico"
           }
         },
@@ -39,7 +39,7 @@
           ],
           "config": {
             "name": "screenRecorder",
-            "setupIcon": "favicon.icns",
+            "setupIcon": "src/favicon.icns",
             "iconUrl": "https://github.com/KonstantinosAng/screenRecorder/tree/master/screenRecorder/src/favicon.icns"
           }
         },
@@ -47,7 +47,7 @@
           "name": "@electron-forge/maker-deb",
           "config": {
             "name": "screenRecorder",
-            "setupIcon": "favicon.png",
+            "setupIcon": "src/favicon.png",
             "iconUrl": "https://github.com/KonstantinosAng/screenRecorder/tree/master/screenRecorder/src/favicon.png"
           }
         },
@@ -55,7 +55,7 @@
           "name": "@electron-forge/maker-rpm",
           "config": {
             "name": "screenRecorder",
-            "setupIcon": "favicon.png",
+            "setupIcon": "src/favicon.png",
             "iconUrl": "https://github.com/KonstantinosAng/screenRecorder/tree/master/screenRecorder/src/favicon.png"
           }
         }
